@@ -1,0 +1,147 @@
+.place-order {
+    display: flex;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    min-height: 80vh; 
+}
+
+.place-order-left {
+    flex: 1;
+    max-width: 600px; 
+}
+
+.place-order-right {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.title {
+    font-size: 1.8rem;
+    color: #c17a74;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    border-bottom: 2px solid #f3e5e3;
+    padding-bottom: 1rem;
+}
+
+.multi-feilds {
+    display: flex;
+    gap: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e7d5d3;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #c17a74;
+    box-shadow: 0 0 0 2px rgba(193, 122, 116, 0.1);
+}
+
+.cart-totals {
+    background: #fff5f4;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(168, 105, 100, 0.08);
+    width: 100%;
+    max-width: 400px;
+}
+
+.cart-totals h2 {
+    color: #a86964;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #f3e5e3;
+    padding-bottom: 1rem;
+    text-align: center; 
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    color: #7a5956;
+}
+
+.grand-total {
+    font-weight: 600;
+    color: #c17a74 !important;
+    border-top: 2px solid #f3e5e3;
+    padding-top: 1rem;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(to right, #c17a74, #a86964);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.checkout-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .place-order {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 2rem;
+        min-height: auto;
+    }
+    
+    .place-order-left,
+    .place-order-right {
+        width: 100%;
+        max-width: none;
+    }
+    
+    .multi-feilds {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    input {
+        margin-bottom: 1rem;
+    }
+    
+    .cart-totals {
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Added animation for better UX */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.cart-totals {
+    animation: fadeIn 0.5s ease-in-out;
+}
