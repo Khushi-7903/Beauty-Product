@@ -148,7 +148,7 @@ export const productsPage = [
       reviews: 128,
       category: 'Skincare',
       type: 'Serum',
-      skinType: 'All',
+      skinType: 'Sensitive',
       isNew: true,
       image: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2VydW18ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'
     },
@@ -161,7 +161,7 @@ export const productsPage = [
       reviews: 89,
       category: 'Makeup',
       type: 'Lipstick',
-      skinType: 'All',
+      skinType: 'Dry',
       isBestseller: true,
       image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlwc3RpY2t8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'
     },
@@ -187,7 +187,7 @@ export const productsPage = [
       reviews: 156,
       category: 'Makeup',
       type: 'Mascara',
-      skinType: 'All',
+      skinType: 'Oily',
       isNew: true,
       image: 'https://keautybeauty.in/cdn/shop/files/LashQueenMascaraPDP3.png?v=1743403459&width=1080'
     },
@@ -214,7 +214,7 @@ export const productsPage = [
       reviews: 76,
       category: 'Makeup',
       type: 'Eyebrow',
-      skinType: 'All',
+      skinType: 'Sensitive',
       image: 'https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZXllYnJvdyUyMHBlbmNpbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
     },
   ];

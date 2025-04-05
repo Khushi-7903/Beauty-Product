@@ -2,12 +2,12 @@ import React, { useContext } from 'react'
 import { StoreContext } from '../../Context/StoreContextProvider';
 import "../ProductDetail/ProductDetail.css"
 
-const ProductDetail = () => {
+const ProductDetail = ({filterdata}) => {
   const { productsPage } = useContext(StoreContext);
   return (
     <>
       <div className="products-grid">
-        {productsPage.map((product) => (
+        {filterdata.map((product) => (
           <div className="product-card" key={product.id}>
             {product.isBestseller && (
               <div className="bestseller-badge">Bestseller</div>
