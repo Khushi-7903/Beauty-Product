@@ -44,6 +44,154 @@
     margin-right: auto;
 }
 
+/* ProductItem.css */
+
+.product-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.product-item-img-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #eee;
+}
+
+.product-item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover .product-item-img {
+    transform: scale(1.05);
+}
+
+.product-item-info {
+    padding: 1.2rem;
+}
+
+.product-item-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.product-item-desc {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 300px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/* Price Counter Container */
+.price-counter {
+    align-items: center;
+    margin-top: 1.2rem;
+  }
+  
+  /* Price Styling */
+  .product-item-price {
+    font-size: 1.25rem;
+    color: #9b5a54; /* Deep terracotta */
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.5px;
+  }
+  
+
+  
+  /* Counter Container */
+  .product-item-counter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #fffaf9; /* Warm white */
+    border-radius: 30px;
+    padding: 0.4rem 1.2rem;
+    box-shadow: 0 2px 10px rgba(155, 90, 84, 0.08);
+    border: 1px solid #f3e5e3;
+  }
+
+  .addTocart-btn{
+    background-color: #c17a74;
+    border: 1px solid #c17a74;
+    color: white;
+  }
+  
+  .addTocart-btn:hover{
+    background-color: #9b5a54;
+    border-color: #9b5a54;
+  }
+
+  /* Count Number */
+  .product-item-counter span {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #9b5a54; /* Matching price color */
+    min-width: 26px;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-item-info {
+        padding: 1rem;
+    }
+
+    .product-item-name {
+        font-size: 1rem;
+    }
+
+    .product-item {
+        max-width: 350px;
+    }
+
+    .product-item-desc {
+        font-size: 0.85rem;
+    }
+
+    .product-item-price {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        border-radius: 8px;
+        max-width: 300px;
+    }
+    
+    .product-item-info {
+        padding: 0.8rem;
+    }
+}
+
 @media (max-width: 768px) {
     .product-display-list {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

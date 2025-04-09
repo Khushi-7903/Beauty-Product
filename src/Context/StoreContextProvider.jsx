@@ -1,56 +1,63 @@
 import React, { createContext, useEffect, useState } from 'react';
-import { product_list , productsPage } from '../assets/Data/assets';
+import { product_list, productsPage } from '../assets/Data/assets';
+import axios from 'axios';
 
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
+  const [Search, setSearch] = useState("")
+  const [getProduct, setGetProduct] = useState([])
 
-  const [cartItem, setCartItem] = useState(() => {
-    const savedCart = localStorage.getItem("cartItems");
-    return savedCart ? JSON.parse(savedCart) : {};
-  });
 
-  useEffect(() => {
-    localStorage.setItem("cartItems", JSON.stringify(cartItem));
-  }, [cartItem]);
 
-  const addToCart = (itemId) => {
-    setCartItem((prev) => ({
-      ...prev,
-      [itemId]: (prev[itemId] || 0) + 1
-    }));
-  };
+  // add to cart
+  const addToCart = async (item) => {
+    try {
+      const res = await axios.get(`http://localhost:3000/AddtocartProduct?_id=${item._id}`);
+      console.log("Check response data:", res.data);
 
-  const removeFromCart = (itemId) => {
-    setCartItem((prev) => {
-      const updatedCart = { ...prev };
-      if (updatedCart[itemId] > 1) {
-        updatedCart[itemId] -= 1;
-      } else {
-        delete updatedCart[itemId]; 
+      if (res.data.length > 0) {
+        alert(`${item.product_name} is already in the cart`);
+        return;
       }
-      return updatedCart;
-    });
-  };
 
-  const getTotalCartAmount = () => {
-    let totalAmount = 0;
-    for (const item in cartItem) {
-      const itemInfo = product_list.find((product) => product._id === item);
-      if (itemInfo) {
-        totalAmount += itemInfo.product_price * cartItem[item];
-      }
+      await axios.post("http://localhost:3000/AddtocartProduct", item);
+      alert(`${item.product_name} added to cart`);
+    } catch (err) {
+      console.error("Error adding to cart:", err);
+      alert("Something went wrong");
     }
-    return totalAmount;
   };
+
+
+  // search
+  const handleSearch = (e) => {
+    setSearch(e.target.value);
+  }
+
+  // filter products based on search input
+  const filteredProducts = productsPage.filter((item) => {
+    return item.product_name.toLowerCase().includes(Search.toLowerCase())
+  })
+
+  // get data
+  const GetCartProduct = async () => {
+      const get = await axios.get("http://localhost:3000/AddtocartProduct")
+      setGetProduct(get.data)
+    }
+  
+    useEffect(() => {
+      GetCartProduct()
+    }, [])
+    
 
   const contextValue = {
     product_list,
-    cartItem,
-    setCartItem,
     addToCart,
-    removeFromCart,
-    getTotalCartAmount,
+    handleSearch,
+    getProduct,
+    GetCartProduct,
+    filteredProducts,
     productsPage
   };
 

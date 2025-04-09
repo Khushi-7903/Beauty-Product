@@ -5,19 +5,12 @@ import { Link, useNavigate } from 'react-router-dom';
 import { FiSearch, FiShoppingCart, FiUser, FiX } from 'react-icons/fi';
 import { StoreContext } from '../../Context/StoreContextProvider';
 
-const Navbar = ({setShowLogin ,  user}) => {
+const Navbar = () => {
   const [menu, setMenu] = useState("Home");
-  const searchInputRef = useRef(null);
-  const { getTotalCartAmount } = useContext(StoreContext);
-  const navigate = useNavigate()
+  // const searchInputRef = useRef(null);
+  // const { getTotalCartAmount } = useContext(StoreContext);
+  // const navigate = useNavigate()
 
-  const handleLogout = () => {
-   if (confirm("Are you sure you want to log Out?")) {
-    localStorage.removeItem("username"); 
-    setUser(null); 
-    location.reload();
-   }
-  };
 
   return (
     <div className='navbar'>
@@ -35,19 +28,12 @@ const Navbar = ({setShowLogin ,  user}) => {
         <div className="navbar-icons">
           <div className="navbar-cart-icon">
             <Link to={"/cart"}><FiShoppingCart className="icon" /></Link>
-            <div className={getTotalCartAmount() === 0 ? "" : "dot"}></div>
+            <div className= "dot"></div>
           </div>
-          {user ? (
-            <div className="user-info">
-              <span className="username">{user}</span>
-              <button onClick={handleLogout} className="logout-btn">Logout</button>
-            </div>
-          ) : (
-            <button className="signin-btn" onClick={() => setShowLogin(true)}>
+            <button className="signin-btn" >
               <FiUser className="icon" />
               <span>Sign In</span>
             </button>
-          )}
         </div>
       </div>
     </div>
