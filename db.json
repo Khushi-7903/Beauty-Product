@@ -1,29 +1,3 @@
 {
-  "AddtocartProduct": [
-    {
-      "id": "04ba",
-      "_id": 4,
-      "product_name": "Face Wash",
-      "product_image": "/public/img/facewash.webp",
-      "product_price": 300,
-      "product_description": "A skincare product for cleansing the face, removing impurities, and excess oil. Suitable for different skin types.",
-      "category": "Face Wash",
-      "quantity": 1
-    },
-    {
-      "id": "1651",
-      "_id": 11,
-      "product_name": "Blue Heaven Compact Powder",
-      "brand": "Blue Heaven",
-      "product_price": 216,
-      "originalPrice": 250,
-      "rating": 4.5,
-      "reviews": 128,
-      "category": "Makeup",
-      "type": "Compact Powder",
-      "skinType": "All",
-      "isNew": true,
-      "product_image": "/public/img/product%20Page/BlueHeaven_CompactPowder.jpg"
-    }
-  ]
+  "AddtocartProduct": []
 }

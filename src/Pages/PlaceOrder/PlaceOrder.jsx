@@ -4,7 +4,12 @@ import { StoreContext } from '../../Context/StoreContextProvider'
 
 const PlaceOrder = () => {
 
-  const {getTotalCartAmount} = useContext(StoreContext)
+   const { getTotalCartAmount  , getProduct , removeFromCart } = useContext(StoreContext)
+    const Producttotal = getTotalCartAmount();
+    const shipping = Producttotal > 0 ? 10 : 0;
+    const total = Producttotal + shipping;
+
+
   return (
     <form className='place-order'>
       <div className="place-order-left">
@@ -30,15 +35,15 @@ const PlaceOrder = () => {
           <h2>Order Summary</h2>
           <div className="total-row">
             <span>Subtotal:</span>
-            <span>₹{getTotalCartAmount()}</span>
+            <span>₹{Producttotal.toFixed(2)}</span>
           </div>
           <div className="total-row">
             <span>Shipping:</span>
-            <span>₹{getTotalCartAmount()===0 ? 0 : 2}</span>
+            <span>₹{shipping}</span>
           </div>
           <div className="total-row grand-total">
             <span>Total:</span>
-            <span>₹{getTotalCartAmount()===0 ? 0 : getTotalCartAmount()+2}</span>
+            <span>₹{total.toFixed(2)}</span>
           </div>
           <button className="checkout-button">Proceed to Payment</button>
         </div>

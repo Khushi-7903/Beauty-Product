@@ -194,7 +194,6 @@ export const product_list = [
             "A moisturizing product for soothing and protecting dry lips. Contains beeswax, shea butter, and oils with optional SPF.",
         category: "lipstick",
         quantity: 1
-
     },
     {
         _id :3,
@@ -291,7 +290,8 @@ export const productsPage = [
         type: 'Compact Powder',
         skinType: 'All',
         isNew: true,
-        product_image: allImg.BlueHeaven_compact
+        product_image: allImg.BlueHeaven_compact,
+        quantity: 1
     },
     {
         _id:12,
@@ -303,7 +303,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Cleanser',
         skinType: 'Sensitive',
-        product_image: allImg.Cetaphil_Cleanser
+        product_image: allImg.Cetaphil_Cleanser,
+        quantity: 1
     },
     {
         _id :13,
@@ -315,7 +316,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Eyeliner',
         skinType: 'All',
-        product_image: allImg.BlueHeaven_EyeLiner1
+        product_image: allImg.BlueHeaven_EyeLiner1,
+        quantity: 1
     },
     {
         _id :14,
@@ -327,7 +329,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Moisturizer',
         skinType: 'Dry',
-        product_image: allImg.Cetaphil_moisturizing
+        product_image: allImg.Cetaphil_moisturizing,
+        quantity: 1
     },
     {
         _id :15,
@@ -339,7 +342,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Eyeliner',
         skinType: 'All',
-        product_image: allImg.BlueHeaven_EyeLiner2
+        product_image: allImg.BlueHeaven_EyeLiner2,
+        quantity: 1
     },
     {
         _id :16,
@@ -351,7 +355,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Serum',
         skinType: 'All',
-        product_image: allImg.Cetaphil_Serum
+        product_image: allImg.Cetaphil_Serum,
+        quantity: 1
     },
     {
         _id :17,
@@ -364,7 +369,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Foundation',
         skinType: 'All',
-        product_image: allImg.BlueHeaven_Foundation1
+        product_image: allImg.BlueHeaven_Foundation1,
+        quantity: 1
     },
     {
         _id :18,
@@ -376,7 +382,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Sunscreen',
         skinType: 'All',
-        product_image: allImg.Cetaphil_Sunscreen
+        product_image: allImg.Cetaphil_Sunscreen,
+        quantity: 1
     },
     {
         _id :19,
@@ -389,7 +396,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Foundation',
         skinType: 'All',
-        product_image: allImg.BlueHeaven_Foundation2
+        product_image: allImg.BlueHeaven_Foundation2,
+        quantity: 1
     },
     {
         _id :20,
@@ -401,7 +409,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Face Mask',
         skinType: 'All',
-        product_image: allImg.Dot_Key_FaceMask
+        product_image: allImg.Dot_Key_FaceMask,
+        quantity: 1
     },
     {
         _id :21,
@@ -413,7 +422,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Lipbalm',
         skinType: 'All',
-        product_image: allImg.BlueHeaven_Lipbalm1
+        product_image: allImg.BlueHeaven_Lipbalm1,
+        quantity: 1
     },
     {
         _id :22,
@@ -425,7 +435,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Serum',
         skinType: 'All',
-        product_image: allImg.Dot_Key_FaceSerum
+        product_image: allImg.Dot_Key_FaceSerum,
+        quantity: 1
     },
     {
         _id :23,
@@ -437,7 +448,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Lipbalm',
         skinType: 'All',
-        product_image: allImg.BlueHeaven_Lipbalm2
+        product_image: allImg.BlueHeaven_Lipbalm2,
+        quantity: 1
     },
     {
         _id :24,
@@ -449,7 +461,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Face Wash',
         skinType: 'All',
-        product_image: allImg.Dot_Key_FaceWash
+        product_image: allImg.Dot_Key_FaceWash,
+        quantity: 1
     },
     {
         _id :25,
@@ -461,7 +474,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Lipstick',
         skinType: 'All',
-        product_image: allImg.BlueHeaven_Lipstick1
+        product_image: allImg.BlueHeaven_Lipstick1,
+        quantity: 1
     },
     {
         _id :26,
@@ -473,7 +487,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Moisturizer',
         skinType: 'All',
-        product_image: allImg.Dot_Key_Moisturizer
+        product_image: allImg.Dot_Key_Moisturizer,
+        quantity: 1
     },
     {
         _id :27,
@@ -485,7 +500,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Lipstick',
         skinType: 'All',
-        product_image: allImg.BlueHeaven_Lipstick2
+        product_image: allImg.BlueHeaven_Lipstick2,
+        quantity: 1
     },
     {
         _id :28,
@@ -497,7 +513,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Sunscreen',
         skinType: 'All',
-        product_image: allImg.Dot_Key_Sunscreen
+        product_image: allImg.Dot_Key_Sunscreen,
+        quantity: 1
     },
     {
         _id :29,
@@ -509,7 +526,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Mascara',
         skinType: 'All',
-        product_image: allImg.BlueHeaven_Mascara1
+        product_image: allImg.BlueHeaven_Mascara1,
+        quantity: 1
     },
     {
         _id :30,
@@ -521,7 +539,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Cleanser',
         skinType: 'All',
-        product_image: allImg.Minimalist_Cleanser
+        product_image: allImg.Minimalist_Cleanser,
+        quantity: 1
     },
     {
         _id :31,
@@ -533,7 +552,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Mascara',
         skinType: 'All',
-        product_image: allImg.BlueHeaven_Mascara2
+        product_image: allImg.BlueHeaven_Mascara2,
+        quantity: 1
     },
     {
         _id:32,
@@ -545,7 +565,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Moisturizer',
         skinType: 'Dry',
-        product_image: allImg.Minimalist_Moisturizer
+        product_image: allImg.Minimalist_Moisturizer,
+        quantity: 1
     },
     {
         _id:33,
@@ -557,7 +578,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Primer',
         skinType: 'All',
-        product_image: allImg.BlueHeaven_Primar
+        product_image: allImg.BlueHeaven_Primar,
+        quantity: 1
     },
     {
         _id:34,
@@ -569,7 +591,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Serum',
         skinType: 'All',
-        product_image: allImg.Minimalist_Serum
+        product_image: allImg.Minimalist_Serum,
+        quantity: 1
     },
     {
         _id:35,
@@ -581,7 +604,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Eyeliner',
         skinType: 'All',
-        product_image: allImg.Lakme_EyeLiner1
+        product_image: allImg.Lakme_EyeLiner1,
+        quantity: 1
     },
     {
         _id:36,
@@ -593,7 +617,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Sunscreen',
         skinType: 'All',
-        product_image: allImg.Minimalist_Sunscreen
+        product_image: allImg.Minimalist_Sunscreen,
+        quantity: 1
     },
     {
         _id:37,
@@ -605,7 +630,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Eyeliner',
         skinType: 'All',
-        product_image: allImg.Lakme_EyeLiner2
+        product_image: allImg.Lakme_EyeLiner2,
+        quantity: 1
     },
     {
         _id:38,
@@ -617,7 +643,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Night Cream',
         skinType: 'Combination',
-        product_image: allImg.Plum_FaceMask
+        product_image: allImg.Plum_FaceMask,
+        quantity: 1
     },
     {
         _id:39,
@@ -630,7 +657,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Foundation',
         skinType: 'All',
-        product_image: allImg.Lakme_Foundation
+        product_image: allImg.Lakme_Foundation,
+        quantity: 1
     },
     {
         _id:40,
@@ -642,7 +670,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Serum',
         skinType: 'All',
-        product_image: allImg.Plum_Serum
+        product_image: allImg.Plum_Serum,
+        quantity: 1
     },
     {
         _id:41,
@@ -654,7 +683,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Lipstick',
         skinType: 'All',
-        product_image: allImg.Lakme_Lipstick1
+        product_image: allImg.Lakme_Lipstick1,
+        quantity: 1
     },
     {
         _id:42,
@@ -666,7 +696,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Moisturizer',
         skinType: 'All',
-        product_image: allImg.Plum_Moisturizer
+        product_image: allImg.Plum_Moisturizer,
+        quantity: 1
     },
     {
         _id:43,
@@ -678,7 +709,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Lipstick',
         skinType: 'All',
-        product_image: allImg.Lakme_Lipstick2
+        product_image: allImg.Lakme_Lipstick2,
+        quantity: 1
     },
     {
         _id:44,
@@ -690,7 +722,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Sunscreen',
         skinType: 'All',
-        product_image: allImg.Plum_Sunscreen
+        product_image: allImg.Plum_Sunscreen,
+        quantity: 1
     },
     {
         _id:45,
@@ -702,7 +735,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Mascara',
         skinType: 'All',
-        product_image: allImg.Lakme_Mascara1
+        product_image: allImg.Lakme_Mascara1,
+        quantity: 1
     },
     {
         _id:46,
@@ -714,7 +748,8 @@ export const productsPage = [
         category: 'Skincare',
         type: 'Serum',
         skinType: 'All',
-        product_image: allImg.VitaminCserum
+        product_image: allImg.VitaminCserum,
+        quantity: 1
     },
     {
         _id:47,
@@ -726,7 +761,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Mascara',
         skinType: 'All',
-        product_image: allImg.Lakme_Mascara2
+        product_image: allImg.Lakme_Mascara2,
+        quantity: 1
     },
     {
         _id:48,
@@ -738,7 +774,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Primer',
         skinType: 'All',
-        product_image: allImg.Lakme_Primer
+        product_image: allImg.Lakme_Primer,
+        quantity: 1
     },
     {
         _id:49,
@@ -750,7 +787,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Eyeliner',
         skinType: 'All',
-        product_image: allImg.mac_EyeLiner
+        product_image: allImg.mac_EyeLiner,
+        quantity: 1
     },
     {
         _id:50,
@@ -763,7 +801,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Foundation',
         skinType: 'All',
-        product_image: allImg.mac_Foundation1
+        product_image: allImg.mac_Foundation1,
+        quantity: 1
     },
     {
         _id:51,
@@ -776,7 +815,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Foundation',
         skinType: 'All',
-        product_image: allImg.mac_Foundation2
+        product_image: allImg.mac_Foundation2,
+        quantity: 1
     },
     {
         _id:52,
@@ -788,7 +828,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Lipstick',
         skinType: 'All',
-        product_image: allImg.mac_lipstick1
+        product_image: allImg.mac_lipstick1,
+        quantity: 1
     },
     {
         _id:53,
@@ -800,7 +841,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Lipstick',
         skinType: 'All',
-        product_image: allImg.mac_lipstick2
+        product_image: allImg.mac_lipstick2,
+        quantity: 1
     },
     {
         _id:54,
@@ -812,7 +854,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Lipstick',
         skinType: 'All',
-        product_image: allImg.mac_lipstick3
+        product_image: allImg.mac_lipstick3,
+        quantity: 1
     },
     {
         _id:55,
@@ -824,7 +867,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Mascara',
         skinType: 'All',
-        product_image: allImg.mac_Mascara
+        product_image: allImg.mac_Mascara,
+        quantity: 1
     },
     {
         _id:56,
@@ -836,7 +880,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Eyeliner',
         skinType: 'All',
-        product_image: allImg.maybeline_Eyeliner1
+        product_image: allImg.maybeline_Eyeliner1,
+        quantity: 1
     },
     {
         _id:57,
@@ -848,7 +893,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Eyeliner',
         skinType: 'All',
-        product_image: allImg.maybeline_Eyeliner2
+        product_image: allImg.maybeline_Eyeliner2,
+        quantity: 1
     },
     {
         _id:58,
@@ -861,7 +907,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Foundation',
         skinType: 'All',
-        product_image: allImg.maybeline_Foundation1
+        product_image: allImg.maybeline_Foundation1,
+        quantity: 1
     },
     {
         _id:59,
@@ -874,7 +921,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Foundation',
         skinType: 'All',
-        product_image: allImg.maybeline_Foundation2
+        product_image: allImg.maybeline_Foundation2,
+        quantity: 1
     },
     {
         _id:60,
@@ -886,7 +934,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Lipbalm',
         skinType: 'All',
-        product_image: allImg.maybeline_LipBalm
+        product_image: allImg.maybeline_LipBalm,
+        quantity: 1
     },
     {
         _id:61,
@@ -898,7 +947,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Lipstick',
         skinType: 'All',
-        product_image: allImg.maybeline_Lipstick1
+        product_image: allImg.maybeline_Lipstick1,
+        quantity: 1
     },
     {
         _id:62,
@@ -910,7 +960,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Lipstick',
         skinType: 'All',
-        product_image: allImg.maybeline_Lipstick2
+        product_image: allImg.maybeline_Lipstick2,
+        quantity: 1
     },
     {
         _id:63,
@@ -922,7 +973,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Lipstick',
         skinType: 'All',
-        product_image: allImg.maybeline_Lipstick3
+        product_image: allImg.maybeline_Lipstick3,
+        quantity: 1
     },
     {
         _id:64,
@@ -934,7 +986,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Mascara',
         skinType: 'All',
-        product_image: allImg.maybeline_Mascara1
+        product_image: allImg.maybeline_Mascara1,
+        quantity: 1
     },
     {
         _id:65,
@@ -946,7 +999,8 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Mascara',
         skinType: 'All',
-        product_image: allImg.maybeline_Mascara2
+        product_image: allImg.maybeline_Mascara2,
+        quantity: 1
     },
     {
         _id:66,
@@ -958,6 +1012,7 @@ export const productsPage = [
         category: 'Makeup',
         type: 'Mascara',
         skinType: 'All',
-        product_image: allImg.maybeline_Mascara3
+        product_image: allImg.maybeline_Mascara3,
+        quantity: 1
     },
 ];

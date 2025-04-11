@@ -147,6 +147,16 @@
     border-color: #9b5a54;
   }
 
+  .addTocart-btn:active{
+    background-color: #9b5a54 !important;
+    border-color: #9b5a54 !important;
+  }
+
+  .addTocart-btn:focus{
+    background-color: #9b5a54 !important;
+    border-color: #9b5a54 !important;
+  }
+
   /* Count Number */
   .product-item-counter span {
     font-size: 0.95rem;

@@ -20,7 +20,7 @@ const ProductDetail = ({filteredProducts}) => {
                   <span className="rating">{items.rating} ★</span>
                   <span className="reviews">({items.reviews} reviews)</span>
                 </div>
-                <p className="product-price">${items.product_price}</p>
+                <p className="product-price">₹{items.product_price}</p>
                 <button className="add-to-cart-btn" onClick={()=>{addToCart(items)}} >Add to Cart</button>
               </div>
             </div>)

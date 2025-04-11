@@ -82,6 +82,10 @@
     background: rgba(193, 122, 116, 0.1);
     transform: scale(1.1);
   }
+
+  .close-icon{
+    cursor: pointer;
+  }
   
   /* Centered Summary Section */
   .cart-summary {
@@ -181,6 +185,27 @@
     color: #9b5a54; /* Darker terracotta */
     background: rgba(155, 90, 84, 0.15);
   }
+
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    /* height: 20vh; */
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+  }
+  
+  .qty-icon {
+    cursor: pointer;
+    font-size: 1rem !important;
+    color: white !important;
+    background-color: #c17a74;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  
   
   /* Responsive Design */
   @media (max-width: 768px) {

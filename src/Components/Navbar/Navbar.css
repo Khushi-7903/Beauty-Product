@@ -148,24 +148,25 @@
     transform: scale(1.1);
   }
 
+  .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #c17a74;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
   .navbar-cart-icon {
     position: relative;
-    padding: 5px;
-  }
-
-  .navbar-cart-icon:hover .icon {
-    color: #c17a74;
-    transform: scale(1.1);
-  }
-
-  .dot {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 8px;
-    height: 8px;
-    background: red;
-    border-radius: 50%;
+    display: inline-block;
   }
 
   /* Sign In Button */
