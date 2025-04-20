@@ -1,3 +1,4 @@
+// Your existing component code remains the same
 import React, { useContext, useState, useRef, useEffect } from 'react';
 import "./navbar.css";
 import logo from "../../../public/img/logo1.png";
@@ -13,11 +14,10 @@ const Navbar = ({ setShowLogin, user, setUser }) => {
 
   const handleLogout = () => {
     if (confirm("Are you sure you want to log Out?")) {
-      setUser(); // This will call the handleLogout from App.js
+      setUser();
     }
   };
 
-  // Calculate total number of items in cart
   const getTotalCartItems = () => {
     return getProduct.reduce((total, item) => {
       return total + (parseInt(item.quantity) || 1);
@@ -28,11 +28,12 @@ const Navbar = ({ setShowLogin, user, setUser }) => {
     <div className='navbar'>
       <Link to={"/"}><img src={logo} alt="logo" className='logo' /></Link>
 
+      <input type="checkbox" id="check" className="menu-checkbox" />
       <ul className='navbar-menu'>
-        <Link to={"/"} onClick={() => setMenu("Home")} className={menu === "Home" ? "active" : ""}>Home</Link>
-        <a href='#explore-menu' onClick={() => setMenu("Menu")} className={menu === "Menu" ? "active" : ""}>Menu</a>
-        <Link to={'/product'} onClick={() => setMenu("Products")} className={menu === "Products" ? "active" : ""}>Products</Link>
-        <a href='#footer' onClick={() => setMenu("Contactus")} className={menu === "Contactus" ? "active" : ""}>Contact us</a>
+        <Link to={"/"} onClick={() => {setMenu("Home"); document.getElementById('check').checked = false;}} className={menu === "Home" ? "active" : ""}>Home</Link>
+        <a href='#explore-menu' onClick={() => {setMenu("Menu"); document.getElementById('check').checked = false;}} className={menu === "Menu" ? "active" : ""}>Menu</a>
+        <Link to={'/product'} onClick={() => {setMenu("Products"); document.getElementById('check').checked = false;}} className={menu === "Products" ? "active" : ""}>Products</Link>
+        <a href='#footer' onClick={() => {setMenu("Contactus"); document.getElementById('check').checked = false;}} className={menu === "Contactus" ? "active" : ""}>Contact us</a>
       </ul>
 
       <div className="navbar-right">
@@ -54,6 +55,12 @@ const Navbar = ({ setShowLogin, user, setUser }) => {
               <span>Sign In</span>
             </button>
           )}
+        </div>
+        <div className="show-navbar-menu ms-2">
+          <label htmlFor="check" className="icons">
+            <FiX className="icon close-icon" />
+            <i class="fa-solid fa-bars icon menu-icon"></i>
+          </label>
         </div>
       </div>
     </div>

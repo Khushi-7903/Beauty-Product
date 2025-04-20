@@ -1,4 +1,3 @@
-/* Centered Text Styles */
 .cart {
     padding: 2rem;
     max-width: 1200px;
@@ -7,7 +6,6 @@
     text-align: center;
   }
   
-  /* Table Styling */
   .cart-table {
     width: 100%;
     border-collapse: collapse;
@@ -49,7 +47,6 @@
     vertical-align: middle;
   }
   
-  /* Centered Product Image */
   .cart-item-image {
     width: 80px;
     height: 80px;
@@ -66,7 +63,6 @@
     height: 26vh !important;
   }
   
-  /* Centered Remove Icon */
   .cart-remove-icon {
     color: #a86964;
     cursor: pointer;
@@ -87,7 +83,6 @@
     cursor: pointer;
   }
   
-  /* Centered Summary Section */
   .cart-summary {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -138,7 +133,6 @@
     margin-top: 1.5rem;
   }
   
-  /* Centered Promo Section */
   .promo-section h3 {
     color: #a86964;
     margin-bottom: 1rem;
@@ -173,7 +167,7 @@
 
   .fa-plus , .fa-minus {
     cursor: pointer;
-    color: #c17a74; /* Soft rose */
+    color: #c17a74;
     font-size: 0.9rem;
     padding: 0.5rem;
     transition: all 0.2s ease;
@@ -182,7 +176,7 @@
   }
   
   .fa-plus:hover, .fa-minus:hover {
-    color: #9b5a54; /* Darker terracotta */
+    color: #9b5a54;
     background: rgba(155, 90, 84, 0.15);
   }
 
@@ -191,7 +185,6 @@
     align-items: center;
     gap: 8px;
     justify-content: center;
-    /* height: 20vh; */
     padding-top: 45px !important;
     padding-bottom: 45px !important;
   }
@@ -206,9 +199,7 @@
     height: 20px;
   }
   
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
+    @media (max-width: 768px) {
     .cart {
       padding: 1rem;
     }

@@ -1,5 +1,5 @@
 .footer {
-    background-color: #fff9f6; /* Soft peach background */
+    background-color: #fff9f6; 
     color: #5a4d41;
     padding: 60px 0 30px;
     font-family: 'Poppins', sans-serif;
@@ -25,7 +25,6 @@
     width: 200px;
     height: auto;
     margin-bottom: 15px;
-    /* Removed filter to show original logo colors */
   }
   
   .footer-content-left p {

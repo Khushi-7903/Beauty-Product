@@ -37,7 +37,7 @@ const App = () => {
         <Navbar 
           setShowLogin={setShowLogin} 
           user={user}
-          setUser={handleLogout} // Pass logout function to Navbar
+          setUser={handleLogout}
         />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -50,7 +50,7 @@ const App = () => {
           <Login
             setShowLogin={setShowLogin}
             setShowRegister={setShowRegister}
-            setUser={handleSetUser} // Use the new handler
+            setUser={handleSetUser} 
           />
         )}
 
@@ -58,7 +58,7 @@ const App = () => {
           <Register
             setShowRegister={setShowRegister}
             setShowLogin={setShowLogin}
-            setUser={handleSetUser} // Use the new handler
+            setUser={handleSetUser} 
           />
         )}
       </div>

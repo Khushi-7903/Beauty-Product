@@ -5,10 +5,10 @@
     padding: 0 30px;
     background: white;
     height: 80px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0%;
-    z-index: 9999;
+    z-index: 9999999999999999999999999999999;
   }
 
   .logo {
@@ -68,7 +68,7 @@
 
   .search-box {
     position: absolute;
-    right: 160px; 
+    right: 160px;
     top: 50%;
     transform: translateY(-50%) scaleX(0);
     transform-origin: right center;
@@ -163,13 +163,12 @@
     font-size: 12px;
     font-weight: bold;
   }
-  
+
   .navbar-cart-icon {
     position: relative;
     display: inline-block;
   }
 
-  /* Sign In Button */
   .signin-btn {
     display: flex;
     align-items: center;
@@ -194,7 +193,6 @@
     color: white;
   }
 
-  /* User Info Section */
   .user-info {
     display: flex;
     align-items: center;
@@ -232,18 +230,91 @@
     box-shadow: 0 2px 6px rgba(193, 122, 116, 0.2);
   }
 
-  /* Optional: Add media query for smaller screens */
+
+  #check {
+    display: none;
+  }
+
+  .close-icon{
+    display: none;
+  }
+
+  .show-navbar-menu {
+    display: none;
+    font-size: large;
+    color: #c17a74;
+    cursor: pointer;
+  }
+
+  .menu-checkbox {
+    display: none;
+  }
+
+  .icons {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .close-icon {
+    display: none !important;
+  }
+
+  .menu-icon {
+    display: block !important;
+   color: #a86964;
+  }
+
+  #check:checked~.navbar-menu {
+    right: 0;
+  }
+
+  #check:checked~.navbar-right .icons .close-icon {
+    display: block !important;
+  }
+
+  #check:checked~.navbar-right .icons .menu-icon {
+    display: none !important;
+  }
+
   @media (max-width: 768px) {
     .user-info {
       gap: 10px;
     }
-    
+
     .username {
       font-size: 13px;
     }
-    
+
     .logout-btn {
       padding: 5px 10px;
       font-size: 12px;
     }
+
+    .show-navbar-menu {
+      display: flex;
+    }
+
+    .navbar-menu {
+      position: fixed;
+      top: 80px;
+      right: -100%;
+      width: 60%;
+      height: calc(100vh - 80px);
+      background: white;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 20px;
+      box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+      transition: right 0.3s ease;
+      z-index: 9999999999 !important;
+    }
+
+    .navbar-menu a {
+      padding: 15px 0;
+      width: 100%;
+      text-align: center;
+    }
+
+
   }

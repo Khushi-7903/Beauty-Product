@@ -7,40 +7,44 @@ export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
   const [Search, setSearch] = useState("")
   const [getProduct, setGetProduct] = useState([])
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedBrand, setSelectedBrand] = useState("");
 
- // add to cart
-const addToCart = async (item) => {
-  try {
-    const res = await axios.get(`http://localhost:3000/AddtocartProduct?_id=${item._id}`);
-    console.log("Check response data:", res.data);
+  // add to cart
+  const addToCart = async (item) => {
+    try {
+      const res = await axios.get(`http://localhost:3000/AddtocartProduct?_id=${item._id}`);
+      console.log("Check response data:", res.data);
 
-    if (res.data.length > 0) {
-      alert(`${item.product_name} is already in the cart`);
-      return;
+      if (res.data.length > 0) {
+        alert(`${item.product_name} is already in the cart`);
+        return;
+      }
+      await axios.post("http://localhost:3000/AddtocartProduct", item);
+      alert(`${item.product_name} added to cart`);
+      GetCartProduct();
+    } catch (err) {
+      console.error("Error adding to cart:", err);
+      alert("Something went wrong");
     }
-
-    await axios.post("http://localhost:3000/AddtocartProduct", item);
-    alert(`${item.product_name} added to cart`);
-
-    // 🔥 Update cart state after adding item
-    GetCartProduct(); 
-  } catch (err) {
-    console.error("Error adding to cart:", err);
-    alert("Something went wrong");
-  }
-};
-
-
+  };
 
   // search
   const handleSearch = (e) => {
     setSearch(e.target.value);
   }
+  const handleCategoryChange = (e) => setSelectedCategory(e.target.value);
+  const handleBrandChange = (e) => setSelectedBrand(e.target.value);
 
   // filter products based on search input
   const filteredProducts = productsPage.filter((item) => {
-    return item.product_name.toLowerCase().includes(Search.toLowerCase())
-  })
+    const matchesSearch = item.product_name.toLowerCase().includes(Search.toLowerCase());
+    const matchesCategory = selectedCategory === "" || item.category === selectedCategory;
+    const matchesBrand = selectedBrand === "" || item.brand === selectedBrand;
+
+    return matchesSearch && matchesCategory && matchesBrand ;
+  });
+
 
   // get data
   const GetCartProduct = async () => {
@@ -53,7 +57,7 @@ const addToCart = async (item) => {
   }, [])
 
   useEffect(() => {
-    console.log("Cart items:", getProduct);
+    // console.log("Cart items:", getProduct);
   }, [getProduct]);
 
   //remove data
@@ -72,14 +76,12 @@ const addToCart = async (item) => {
   const updateCartQuantity = async (id, quantity) => {
     try {
       await axios.patch(`http://localhost:3000/AddtocartProduct/${id}`, { quantity });
-      GetCartProduct(); // Refresh cart
+      GetCartProduct();
     } catch (error) {
       console.error("Error updating quantity:", error);
       alert("Failed to update quantity");
     }
   };
-
-
 
   // total
   const getTotalCartAmount = () => {
@@ -103,8 +105,12 @@ const addToCart = async (item) => {
     getTotalCartAmount,
     updateCartQuantity,
     filteredProducts,
-    productsPage
+    productsPage,
+    handleCategoryChange,
+    handleBrandChange,
+    selectedCategory,
   };
+
 
   return (
     <StoreContext.Provider value={contextValue}>

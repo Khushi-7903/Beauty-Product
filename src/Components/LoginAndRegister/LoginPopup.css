@@ -15,13 +15,12 @@
   background: #fff5f4;
   padding: 1rem;
   border-radius: 12px;
-  width: 100%;;
-  max-width: 350px; /* Reduced from 400px */
+  width: 100%;
+  max-width: 350px;
   position: relative;
   box-shadow: 0 4px 20px rgba(168, 105, 100, 0.15);
 }
 
-/* Floral Decorations - made smaller */
 .login-popup-container::before {
   content: "";
   position: absolute;
@@ -29,12 +28,12 @@
   right: -20px;
   width: 60px;
   height: 60px;
-  background: 
-      radial-gradient(circle at 30% 30%, #ffd8e4 10%, transparent 11%),
-      radial-gradient(circle at 70% 30%, #ffd8e4 10%, transparent 11%),
-      radial-gradient(circle at 30% 70%, #ffd8e4 10%, transparent 11%),
-      radial-gradient(circle at 70% 70%, #ffd8e4 10%, transparent 11%),
-      radial-gradient(circle at 50% 50%, #c17a74 15%, #a86964 20%, transparent 21%);
+  background:
+    radial-gradient(circle at 30% 30%, #ffd8e4 10%, transparent 11%),
+    radial-gradient(circle at 70% 30%, #ffd8e4 10%, transparent 11%),
+    radial-gradient(circle at 30% 70%, #ffd8e4 10%, transparent 11%),
+    radial-gradient(circle at 70% 70%, #ffd8e4 10%, transparent 11%),
+    radial-gradient(circle at 50% 50%, #c17a74 15%, #a86964 20%, transparent 21%);
   transform: rotate(45deg);
   opacity: 0.15;
   z-index: 0;
@@ -48,9 +47,9 @@
   left: -30px;
   width: 80px;
   height: 80px;
-  background: 
-      radial-gradient(circle at 50% 50%, #ffd8e4 20%, transparent 21%),
-      repeating-conic-gradient(from 0deg, #c17a74 0deg 10deg, transparent 10deg 20deg);
+  background:
+    radial-gradient(circle at 50% 50%, #ffd8e4 20%, transparent 21%),
+    repeating-conic-gradient(from 0deg, #c17a74 0deg 10deg, transparent 10deg 20deg);
   opacity: 0.1;
   transform: rotate(-20deg);
   z-index: 0;
@@ -60,15 +59,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem; /* Reduced from 1.5rem */
+  margin-bottom: 1rem;
   color: #a86964;
   position: relative;
 }
 
 .close-icon {
+  display: block;
   cursor: pointer;
-  transition: all 0.3s ease;
   color: #a86964;
+  font-size: large;
 }
 
 .close-icon:hover {
@@ -91,11 +91,11 @@
   width: 100%;
 }
 
-/* Reset Password Popup Styles */
-.forgot-password{
+.forgot-password {
   color: #a86964;
   cursor: pointer;
 }
+
 .reset-popup-overlay {
   position: fixed;
   top: 0;
@@ -164,67 +164,61 @@
 
 .login-popup-container button {
   width: 100%;
-  padding: 0.8rem; /* Reduced from 1rem */
+  padding: 0.8rem;
   background-color: #c17a74;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 0.9rem; /* Reduced from 1rem */
+  font-size: 0.9rem;
   transition: background-color 0.3s ease;
-  margin-top: 0.5rem; /* Added */
+  margin-top: 0.5rem;
 }
 
 .login-popup-condition {
   display: flex;
   align-items: center;
-  margin: 0.8rem 0; /* Reduced from 1rem */
+  margin: 0.8rem 0;
   gap: 5px;
-  font-size: 0.8rem; /* Reduced from 0.9rem */
+  font-size: 0.8rem;
   color: #a86964;
 }
 
 .login-popup-condition input[type="checkbox"] {
   accent-color: #c17a74;
-  width: 15px; /* Fixed width */
-  height: 15px; /* Fixed height */
-  min-width: 15px; /* Prevent shrinking */
+  width: 15px;
+  height: 15px;
+  min-width: 15px;
 }
 
 .login-popup-container p {
-  font-size: 0.8rem; /* Reduced from 0.9rem */
+  font-size: 0.8rem;
   color: #7a5956;
-  margin-top: 0.8rem; /* Reduced from 1rem */
+  margin-top: 0.8rem;
 }
 
-/* Divider styles */
 .login-popup-divider {
   display: flex;
   align-items: center;
-  margin: 0.8rem 0; /* Reduced from 1rem */
+  margin: 0.8rem 0;
   color: #777;
-  font-size: 0.8rem; /* Reduced from 0.9rem */
+  font-size: 0.8rem;
 }
 
-/* Google button styles */
 .google-signin-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px; /* Reduced from 10px */
+  gap: 8px;
   width: 100%;
-  padding: 0.7rem; /* Reduced from 0.8rem */
-  font-size: 0.9rem; /* Reduced */
+  padding: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .google-signin-btn span {
-  color: #444 !important; /* Changed from white */
+  color: white !important;
 }
 
-.google-signin-btn span:hover {
-  color: #444 !important; /* Changed from white */
-}
-
-.anotherPage{
+.anotherPage {
   cursor: pointer;
 }
